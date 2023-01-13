@@ -11,3 +11,7 @@ Die URL ist folgende:
 ``
 wss://demo.piesocket.com/v3/channel_123?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self
 `` 
+
+## Quellen von Interesse
+- https://vuejs.org/guide/
+- https://github.com/vuejs/petite-vue [als ggf. schlankere Alternative]
