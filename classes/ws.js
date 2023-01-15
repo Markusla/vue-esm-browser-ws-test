@@ -1,4 +1,4 @@
-export default class WS {
+class WS {
 	wsMessage = "test";
 	socket = null;
 
@@ -32,3 +32,8 @@ export default class WS {
 		};
 	}
 }
+
+const ws = new WS();
+ws.connectws();
+
+export default ws;

@@ -1,6 +1,7 @@
-import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
-import App from "./components/App.js";
+import { createApp } from "vue";
+import app from "./app.js";
+import router from "./router.js";
+import ws from "./classes/ws.js";
 
 // Create new Vue app
-const app = createApp(App);
-app.mount("#vuetest");
+createApp(app).use(router).provide("ws", ws).mount("#vuetest");
