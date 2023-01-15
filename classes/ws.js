@@ -1,4 +1,4 @@
-class WS {
+export default class WS {
 	wsMessage = "test";
 	socket = null;
 
@@ -14,6 +14,7 @@ class WS {
 		};
 
 		this.socket.onmessage = (event) => {
+			console.log(event.data);
 			this.wsMessage = event.data;
 		};
 
@@ -32,8 +33,3 @@ class WS {
 		};
 	}
 }
-
-const ws = new WS();
-ws.connectws();
-
-export default ws;
